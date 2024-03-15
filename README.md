@@ -19,66 +19,150 @@ Our method comprises the Image-only module guided by contrastive learning, the E
 <table>
 <thead>
   <tr>
-    <th>Methods</th>
+    <th>Fusion Model</th>
     <th>AUROC</th>
     <th>ACC</th>
     <th>F1 score</th>
-    <th>Specificity</th>
     <th>Sensitivity</th>
-    <th>PPV</th>
+    <th>Specificity</th>
     <th>NPV</th>
+    <th>PPV</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>3D ResNet50</td>
-    <td>0.694</td>
-    <td>0.556</td>
-    <td>0.687</td>
-    <td>0.785</td>
+    <td>PEFusion</td>
     <td>0.963</td>
-    <td>0.534</td>
-    <td>0.785</td>
-  </tr>
-  <tr>
-    <td>3D ResNet101</td>
-    <td>0.722</td>
-    <td>0.611</td>
-    <td>0.701</td>
-    <td>0.757</td>
-    <td>0.902</td>
-    <td>0.574</td>
-    <td>0.757</td>
-  </tr>
-  <tr>
-    <td>PENet</td>
-    <td>0.660</td>
-    <td>0.623</td>
-    <td>0.666</td>
-    <td>0.656</td>
-    <td>0.743</td>
-    <td>0.604</td>
-    <td>0.656</td>
-  </tr>
-  <tr>
-    <td>PEfusion</td>
-    <td>0.936</td>
-    <td>0.882</td>
-    <td>0.882</td>
+    <td>0.907</td>
+    <td>0.909</td>
+    <td>0.929</td>
     <td>0.900</td>
-    <td>0.866</td>
-    <td>0.898</td>
-    <td>0.867</td>
+    <td>0.911</td>
+    <td>0.890</td>
   </tr>
   <tr>
-    <td>PE-MVCNet(Ours)</td>
-    <td>0.941</td>
-    <td>0.902</td>
-    <td>0.906</td>
-    <td>0.932</td>
+    <td>PECon</td>
+    <td>0.966</td>
+    <td>0.920</td>
+    <td>0.924</td>
+    <td>0.963</td>
+    <td>0.875</td>
+    <td>0.959</td>
+    <td>0.888</td>
+  </tr>
+  <tr>
+    <td><b>CLPENet(Ours)</b></td>
+    <td>0.968</td>
+    <td>0.926</td>
+    <td>0.929</td>
+    <td>0.963</td>
+    <td>0.887</td>
+    <td>0.959</td>
+    <td>0.898</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th>Image-only Model</th>
+    <th>AUROC</th>
+    <th>ACC</th>
+    <th>F1 score</th>
+    <th>Sensitivity</th>
+    <th>Specificity</th>
+    <th>NPV</th>
+    <th>PPV</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>PEFusion-Image</td>
+    <td>0.760</td>
+    <td>0.759</td>
+    <td>0.734</td>
+    <td>0.862</td>
+    <td>0.658</td>
+    <td>0.830</td>
+    <td>0.711</td>
+  </tr>
+  <tr>
+    <td>PECon-Image</td>
+    <td>0.831</td>
+    <td>0.790</td>
+    <td>0.800</td>
+    <td>0.829</td>
+    <td>0.750</td>
+    <td>0.811</td>
+    <td>0.773</td>
+  </tr>
+  <tr>
+    <td><b>CLPENet-Image</b></td>
+    <td>0.851</td>
+    <td>0.802</td>
+    <td>0.795</td>
+    <td>0.756</td>
+    <td>0.850</td>
+    <td>0.773</td>
+    <td>0.838</td>
+  </tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+  <tr>
+    <th>Tabular-only Model</th>
+    <th>AUROC</th>
+    <th>ACC</th>
+    <th>F1 score</th>
+    <th>Sensitivity</th>
+    <th>Specificity</th>
+    <th>NPV</th>
+    <th>PPV</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>PEFusion-Tabular</td>
+    <td>0.858</td>
+    <td>0.858</td>
+    <td>0.853</td>
+    <td>0.817</td>
+    <td>0.900</td>
+    <td>0.827</td>
+    <td>0.893</td>
+  </tr>
+  <tr>
+    <td>PECon-Tabular</td>
+    <td>0.938</td>
+    <td>0.907</td>
+    <td>0.910</td>
+    <td>0.927</td>
+    <td>0.887</td>
+    <td>0.922</td>
+    <td>0.894</td>
+  </tr>
+  <tr>
+    <td>Tabular(without cl)</td>
     <td>0.939</td>
-    <td>0.899</td>
-    <td>0.932</td>
+    <td>0.909</td>
+    <td>0.911</td>
+    <td>0.929</td>
+    <td>0.887</td>
+    <td>0.922</td>
+    <td>0.894</td>
+  </tr>
+  <tr>
+    <td><b>CLPENet-Tabular</b></td>
+    <td>0.942</td>
+    <td>0.914</td>
+    <td>0.917</td>
+    <td>0.939</td>
+    <td>0.887</td>
+    <td>0.934</td>
+    <td>0.895</td>
   </tr>
 </tbody>
 </table>

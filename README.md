@@ -16,6 +16,8 @@ Our method comprises the Image-only module guided by contrastive learning, the E
 
  ## Experiment result
    We compared to other state-of-the-art methods and our results are better than any other method of comparison. The results demonstrate that the introduced contrastive learning and causal learning strategies effectively capture the intrinsic correlations between the two modalities and eliminate confounding features in the extracted features, thus providing the model with richer and truly informative information.
+
+### Results of Fusion Models
 <table>
 <thead>
   <tr>
@@ -63,6 +65,7 @@ Our method comprises the Image-only module guided by contrastive learning, the E
 </tbody>
 </table>
 
+### Results of Image-only Models
 <table>
 <thead>
   <tr>
@@ -110,6 +113,7 @@ Our method comprises the Image-only module guided by contrastive learning, the E
 </tbody>
 </table>
 
+### Results of Tabular-only Models
 <table>
 <thead>
   <tr>
@@ -184,7 +188,7 @@ Our model's best checkpoint is provided in this github, and you can use it to ea
 
 ### Data preprocess
 The preprocessing of the image data can follow this link https://github.com/marshuang80/PENet
- In short, using create_hdf5.py to make an hdf5 file. As for the preprocessing of the tabular data, We first conduct dimensionality reduction using LinearSVC on the EMR data, then use TabNet to transform the data into suitable embeddings. 
+ In short, using create_hdf5.py to make an hdf5 file. As for the preprocessing of the tabular data, We first conduct dimensionality reduction using LinearSVC on the EMR data.
 
 ### Evaluation
 To do the evaluation process, please run the following command :

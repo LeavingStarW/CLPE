@@ -14,13 +14,8 @@ Our method comprises the Image-only module guided by contrastive learning, the E
 
 ![image](images/ICIP2024_model.png)
 
- ## The Multi-View Coupled Self-Attention Block of our method
-<img src="https://github.com/LeavingStarW/PE-MVCNET/blob/main/images/DASA.png?raw=true" width="400px">
-
-
-
  ## Experiment result
-   We compared to other state-of-the-art methods and our results are better than any other method of comparison. Results prove that the introduced CMAF module adeptly captures the inherent correlations between the two modalities, thereby providing the model with richer information.
+   We compared to other state-of-the-art methods and our results are better than any other method of comparison. The results demonstrate that the introduced contrastive learning and causal learning strategies effectively capture the intrinsic correlations between the two modalities and eliminate confounding features in the extracted features, thus providing the model with richer and truly informative information.
 <table>
 <thead>
   <tr>

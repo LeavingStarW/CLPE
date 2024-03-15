@@ -12,7 +12,7 @@ This code is a pytorch implementation of our paper "GLOBAL ALIGNMENT IN CAUSAL L
 
 Our method comprises the Image-only module guided by contrastive learning, the EHR-only module, and the classifier module based on causal learning. These modules cooperate to extract comprehensive and confounding-free features, which subsequently generate predictions for PE. The figure below shows our proposed network.
 
-![image](images/model.png)
+![image](images/ICIP2024_model.png)
 
  ## The Multi-View Coupled Self-Attention Block of our method
 <img src="https://github.com/LeavingStarW/PE-MVCNET/blob/main/images/DASA.png?raw=true" width="400px">

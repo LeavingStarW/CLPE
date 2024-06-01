@@ -6,6 +6,8 @@
 ![](https://img.shields.io/badge/-Pytorch-EE4C2C?style=flat-square&logo=Pytorch&logoColor=FFFFFF)
 
 ## Proposed method
+You can find our code of this project in master branch.
+
 We spend a lot of time collecting and summarizing relevant papers and datasets, where you can find them at https://github.com/Ivygugu/Pulmonary-Embolism-Detection/blob/main/README.md
 
 This code is a pytorch implementation of our paper "GLOBAL ALIGNMENT IN CAUSAL LEARNING MODELS FOR IMAGE-TO-TABULAR DATA INTEGRATION IN PULMONARY EMBOLISM DIAGNOSIS".

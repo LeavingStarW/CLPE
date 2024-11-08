@@ -153,3 +153,52 @@ The figure below shows our proposed network.
   </tr>
 </tbody>
 </table>
+
+ We compare our intermodal alignment approach to the currently popular methods CrossAttention and CLIP. Experimental results show that our proposed intermodal alignment method is superior to the two methods.
+<table>
+<thead>
+  <tr>
+    <th>Methods</th>
+    <th>AUROC</th>
+    <th>ACC</th>
+    <th>F1 score</th>
+    <th>Sensitivity</th>
+    <th>Specificity</th>
+    <th>NPV</th>
+    <th>PPV</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>CrossAttention</td>
+    <td>0.967</td>
+    <td>0.914</td>
+    <td>0.918</td>
+    <td>0.951</td>
+    <td>0.875</td>
+    <td>0.946</td>
+    <td>0.886</td>
+  </tr>
+  <tr>
+    <td>CLIP(InfoNCE)</td>
+    <td>0.965</td>
+    <td>0.920</td>
+    <td>0.925</td>
+    <td>0.976</td>
+    <td>0.863</td>
+    <td>0.972</td>
+    <td>0.879</td>
+  </tr>
+  <tr>
+    <td>CCLNet</td>
+    <td>0.966</td>
+    <td>0.926</td>
+    <td>0.930</td>
+    <td>0.976</td>
+    <td>0.875</td>
+    <td>0.972</td>
+    <td>0.889</td>
+  </tr>
+</tbody>
+</table>
+

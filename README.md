@@ -202,3 +202,44 @@ The figure below shows our proposed network.
 </tbody>
 </table>
 
+## Pre-requisties
+* Linux
+
+* Python>=3.8
+
+* NVIDIA GPU (memory>=23G) + CUDA cuDNN
+
+## Getting started to evaluate
+### Install dependencies
+```
+pip install -r requirements.txt
+```
+### Download the checkpoint
+Our model's best checkpoint is provided in this link https://drive.google.com/file/d/1RAhGWlnhfWrR4VFcd0w_a_pskoMam7hd/view?usp=drive_link, and you can use it to easily replicate our results.
+
+### Data preprocess
+The preprocessing of the image data can follow this link https://github.com/marshuang80/PENet
+ In short, using create_hdf5.py to make an hdf5 file. As for the preprocessing of the tabular data, We first conduct dimensionality reduction using LinearSVC on the EMR data, then use TabNet to transform the data into suitable embeddings. 
+
+### Evaluation
+To do the evaluation process, please run the following command :
+```
+sh test.sh
+```
+If you want to find the best threshold for the result, please run the following command :
+```
+python best_threshold.py
+```
+
+### Train by yourself
+If you want to train by yourself, you can run this command :
+```
+sh train.sh
+```
+
+### Data
+The data we used is from Stanford University Medical Center dataset. You can download it from https://stanfordaimi.azurewebsites.net/datasets/3a7548a4-8f65-4ab7-85fa-3d68c9efc1bd.
+
+And the tabular data is already provided in this link.
+
+### Citation
